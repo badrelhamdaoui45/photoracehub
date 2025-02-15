@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="date"],
+  select,
+  textarea {
+    @apply block w-full px-4 py-2.5 bg-white rounded-lg shadow-sm border-0 ring-1 ring-gray-200 focus:ring-2 focus:ring-primary focus:ring-opacity-50 focus:outline-none;
+  }
+}
+
+@layer components {
+  .stat-card {
+    @apply bg-white rounded-xl p-4 shadow-sm border border-gray-100;
+  }
+  
+  .stat-title {
+    @apply text-sm text-gray-500 font-medium mb-1;
+  }
+  
+  .stat-value {
+    @apply text-2xl font-semibold text-gray-900;
+  }
+  
+  .stat-trend {
+    @apply text-sm font-medium;
+  }
+  
+  .trend-up {
+    @apply text-emerald-500;
+  }
+  
+  .trend-down {
+    @apply text-red-500;
+  }
+  
+  .dashboard-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
+  }
+  
+  .card-title {
+    @apply text-lg font-semibold text-gray-900 mb-4;
+  }
+}
